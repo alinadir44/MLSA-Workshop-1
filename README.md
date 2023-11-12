@@ -1,67 +1,42 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526682619)
 
-# JavaScript Portfolio Site with GitHub Codespaces and Copilot
+# Your Personal Portfolio using React and Github Pages
 
-> View these instructions in [Spanish](/translations/es/README.md) or [Portuguese](/translations/pt-BR/README.md)
+_Just edit this template and you're set._ ✨
 
-_Create, customize and deploy your own portfolio website in minutes._ ✨
+The hard part is already done. Using this repository you can set up your very own portfolio website in a matter of minutes. All you have to do is work through the steps.
 
-In this template repository we have the development environment and base set and ready to go. So that you can immediately launch your [Codespace](https://github.com/features/codespaces/) environment and start customizing your site using [Copilot](https://copilot.github.com) to help you write code faster. 
+## An overview of what you'll be doing
+i- creating your own copy of this template.
+ii- editing this template to include your information.
+iii- adding or removing parts from the website.
+iv- deploying the website to github pages so that everyone can access your portfolio.
 
-* **Who is this for?** __Anyone__ looking to create a portfolio site, learn web development, or test out Codespaces.
-* **How much experience do you need?** __Zero__. You decide how much you want to customize based on your experience, and time available.
-* **Tools needed:** _None_. No need to install anything! All you need is a web browser.
-* **Prerequisites:** _None_. This template includes your development environment and deployable web app for you to create your own site.
+<br />
 
-## About this portfolio template
+### But before you start, you'll need to:
 
-In this "choose your own adventure" template portfolio, we have a [React](https://reactjs.org/) based web application ready for you to easily customize and deploy using only your web browser.
+* **Have a Github account**. If you have one, great, just log in. In case you dont remember the password, create a new account using your NUCES email address. (remove this part incase a gh account is needed to view this file)
+* **Fork this repository into your own account.** Forking is like obtaining your own copy of the project and all its contents. You might wonder if its legal to recreate someone else's project. Good for us Github is all about open source and collaboration.
+* **Clone this repository onto your PC/Laptop.** Download the project files onto your device using the clone option. 
+* **Open the project in your preferred IDE** and start making changes!
+
+(remove step 3,4 if cloning isnt involved)
 
 ![JavaScript profile web application](/__images__/js-portfolio-site.gif "JavaScript profile web application")
 
-### Quick Start
-
-1. Click the **Use this Template** button and then **Create a new repository**
-1. Select the repository owner (e.g. your GitHub account)
-1. Enter a unique name for your new repository
-1. Click the **Code** button
-1. Click **Create Codespace on main** button
-1. [Customize your portfolio site](#-customize-your-site-in-3-steps) with Copilot 
-1. [Deploy your site](#-deploy-your-web-application)
-
-<details>
-   <summary><b>🎥 To learn more about Codespaces, watch our video tutorial series</b></summary>
-   
-   [![Codespaces Tutorial](https://img.youtube.com/vi/ozuDPmcC1io/0.jpg)](https://aka.ms/CodespacesVideoTutorial "Codespaces Tutorial")
-</details>
-
 <br />
 
-## 🗃️ JavaScript Portfolio template
-
-This repo is a GitHub template to build a JavaScript personal portfolio frontend web application using the React framework. The goal is to give you a template that you can immediately utilize to create your own website through Codespaces.
+## Getting Started/Getting into the more technical stuff
+What you are provided with is a frontend template made using React framework to help you build your portfolio. The goal is to give you a template that you can immediately utilize to create your own website.
 
 The repo contains the following:
 
-* `/.devcontainer`
-  - `.devcontainer/Dockerfile`: Configuration file used by Codespaces to determine operating system and other details.
-  - `.devcontainer/devcontainer.json`: Configuration file used by Codespaces to configure Visual Studio Code settings, such as the enabling of additional extensions.
-* `/src`: HTML, JS and CSS files used to build your portfolio site.
-* `.eslintrc`: Settings for [ESLint](https://eslint.org/)</a> that is included for code consistency and quality.
-* `.prettierrc`: Settings for [Prettier](https://prettier.io/) that is used to format code.
-* `package.json` and `package-lock.json`: Defines the project information for [Node.js](https://nodejs.org/)</a>, dependent packages and the versions needed of each.
+* `/__images__` contains all the images, videos and GIFs you used on your webiste.
+* `/src` contains all the main code files such as HTML, CSS, JS and others.
+* `package.json` and `package-lock.json` contains the information that the project's package manager will need to keep the project's dependencies consistent throughout every team member's device.
 
 <br />
-
-## 🚀 Getting started
-
-This portfolio site project is filled with sample data so that you can immediately open Codespaces, see it running, and deploy at any point.
-
-Your development environment is all set for you to start. Based on our [JavaScript Codespace Template (React)](https://github.com/microsoft/codespaces-teaching-template-js), here is what is already setup and ready for you to use:
-
-* Simple [React](https://reactjs.org/) application with components for each section of the portfolio site
-* [Parcel](https://parceljs.org/) in place to build your site when deploying
-* Code linting and formatting using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code consistency.
 
 ### Create your portfolio
 
