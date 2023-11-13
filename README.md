@@ -67,24 +67,23 @@ This project is built to be easily customizable. Each section of the site is a s
 
 For each step, open the project in Codespaces, then you can make and commit your changes while within your Codespace. 
 
-> See [Using source control in your codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/using-source-control-in-your-codespace) for more Codespaces source control how-tos
-
 ### 1️⃣ Add your "About me" and social accounts
 
 Within `/src/App.jsx` you will see a variable called `siteProps`. This is a JavaScript object that hold the key value pairs needed to customize your name, title, email, and social accounts.
 
 ```javascript
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
-  medium: "",
-  twitter: "microsoft",
-  youTube: "microsoft",
+  name: "Eleanor Murphy",
+  title: "UX Developer & Digital Strategist",
+  email: "eleanor@example.com",
+  gitHub: "eleanor_dev",
+  instagram: "eleanor.designs",
+  linkedIn: "eleanor-murphy",
+  medium: "eleanor-writes",
+  twitter: "eleanor_tweets",
+  youTube: "eleanor_creates",
 };
+
 ```
 
 Update to the name and title you'd like displayed at the top of your site.
@@ -99,20 +98,20 @@ A couple possible sites to find photos are [Pixabay](https://pixabay.com/) and [
 
 Go to the following below components to update the `import image...` line to reference the new image you downloaded for that section, as well as the `imageAltText` for the image:
 
-* `/src/Components/Home.jsx` - section at top of the page, main image you will see when site loads (woman standing by server wall in sample)
+* `/src/Components/Home.jsx` - section at top of the page, main image you will see when site loads.
    ```javascript
-      import image from "../images/server-wall.jpg";
-      const imageAltText = "woman holding laptop standing by server room with glass wall";
+      import image from "../images/[name of your image and extension]";
+      const imageAltText = "a description of your image";
    ```
-* `/src/Components/About.jsx` - background behind the detailed "About me" section (abstract mosaic in sample)
+* `/src/Components/About.jsx` - background behind the detailed "About me" section.
    ```javascript
-      import image from "../images/mosaic.svg";
-      const imageAltText = "purple and blue abstract background";
+      import image from "../images/[name of your image and extension]";
+      const imageAltText = "a description of your image";
    ```
-* `/src/Components/Portfolio.jsx`- image highlighted in left hand side of section (design desk photo in sample)
+* `/src/Components/Portfolio.jsx`- image highlighted in left hand side of section.
    ```javascript
-      import image from "../images/design-desk.jpeg";
-      const imageAltText = "desktop with books and laptop";
+      import image from "../images/[name of your image and extension]";
+      const imageAltText = "a description of your image";
    ```
 
 ### 3️⃣ Add items you've worked on and detail text
@@ -131,83 +130,55 @@ The sample design has 4, but the number you include is up to you.
 ```javascript
 const projectList = [
   {
-    title: "10 Things to know about Azure Static Web Apps 🎉",
-    description: "Collaboration to create a beginner friendly....",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "title1", 
+    description: "Sample description for collaboration to create a beginner-friendly....",
+    url: "https://abc.com",
   },
   {
-    title: "Web Development for Beginners",
-    description: "Contributed sketch note imagery to accompany...",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "title2",
+    description: "Sample description for contributed sketch note imagery to accompany...",
+    url: "https://xyz.com",
   },
   {
-    title: "My Resume Site",
-    description: "Created from Microsoft's resume workshop...",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "title3",
+    description: "Sample description for created from Microsoft's resume workshop...",
+    url: "https://bcd.com",
   },
   {
-    title: "GitHub Codespaces and GitHub.dev",
-    description: "Video interview to explain when to use GitHub.dev...",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "title4",
+    description: "Sample description for video interview to explain when to use GitHub.dev...",
+    url: "https://pqr.com",
   },
 ];
+
 ```
 
 <br/>
 
 ## 🏃 Deploy your web application
-
-Project includes the setup needed for you to deploy **FREE** to either [Azure Static Web Apps](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=academic-79839-sagibbon) _**or**_ [GitHub Pages](https://pages.github.com/)</a>. Instructions are included below for both:
-
-### Azure Static Web Apps
-
-[Azure Static Web Apps](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=academic-79839-sagibbon) is Microsoft's hosting solution for static sites (or sites that are rendered in the user's browser, not on a server) through Azure. This service provides additional opportunities to expand your site through Azure Functions, authentication, staging versions and more.
-
-You'll need both Azure and GitHub accounts to deploy your web application. If you don't yet have an Azure account you can create it from within during the deploy process, or from below links:
-
-* [Create a (no Credit Card required) Azure For Students account](https://azure.microsoft.com/free/students/?WT.mc_id=academic-79839-sagibbon)
-* [Create a new Azure account](https://azure.microsoft.com/?WT.mc_id=academic-79839-sagibbon)
-
-With your project open in Codespaces:
-
-1. Click Azure icon in the left sidebar. Log in if you are not already, and if new to Azure, follow the prompts to create your account.
-1. From Azure menu click “+” sign and then “Create Static Web App”.
-1. If you are not logged into GitHub you will be prompted to log in. If you have any pending file changes you will then be prompted to commit those changes.
-1. Set your application information when prompted:
-    1. **Region**: pick the one closest to you
-    1. **Project structure**: select "React"
-    1. **Location of application code**: `/`
-    1. **Build location**: `dist`
-1. When complete you will see a notification at the bottom of your screen, and a new GitHub Action workflow will be added to your project. If you click “Open Action in GitHub” you will see the action that was created for you, and it is currently running.
-![Azure Static Web App deploy](/__images__/swa-deploy.gif "Azure Static Web App deploy")
-1. To view the status of your deployment, find your Static Web App resource in the Azure tab in the VS Code left side bar.
-1. Once deployment is complete, you can view your brand new new publicly accessible application by right clicking on your Static Web App resource and selecting "Browse Site".
-
-> **Issues?** When creating your Static Web app, if you are prompted to select an Azure subscription and are not able to select a subscription, check the "Accounts" tab in VS Code. Make sure to choose the "Grant access to ..." options if those options appear. Should you receive the error-message "RepositoryToken is invalid. ..." switch to Visual Studio Code for the Web (vscode.dev) and repeat the steps there.
-
-> 🤩 **Bonus**: [Setup a custom domain for your Azure Static Web App](https://learn.microsoft.com/en-us/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=academic-79839-sagibbon)
+Now that you have edited your template, it's time to deploy it to Github Pages for free. Deploying it makes it accessible for other people around the world to access your website.
 
 ### GitHub Pages
 
-[GitHub Pages](https://pages.github.com/) allows you to host websites directly from your GitHub repository. This project is already set up for you to get your portfolio deployed to GitHub pages with minimal steps.
+GitHub Pages allows you to host websites directly from your GitHub repository. This project is already set up for you to get your portfolio deployed to GitHub pages with minimal steps.
 
 With your project open in Codespaces:
 
 1. Open `package.json` and update the following values:
-    1. **homepage**: set to `http://{github-username}.github.io/{repo-name}`, where `github-username` is your GitHub username and `repo-name` is the what you named this portfolio repo when you created it
-    1. **build-gh**: replace `github-username` with your GitHub username and `repo-name` with the repository name
-1. Commit and push those changes to `package.json` to your GitHub remote repo.
-1. Open a new terminal from the menu or by pressing `ctrl` + `shift` + ` (or open top left menu, select "Terminal" and "New Terminal")
-1. Within the terminal window run `npm run deploy`. This will first run the pre-deploy script to build the project, followed by the deploy script that will push those bundled files to a new branch on your repo (gh-pages) that will be used for you GitHub Pages site.
+    1. **homepage**: set to `http://{github-username}.github.io/{repo-name}`, replace `{github-username}` with your GitHub username and `{repo-name}` with MLSA-Workshop-1.
+    1. **build-gh**: replace `{github-username}` with your GitHub username and `{repo-name}` with MLSA-Workshop-1.
+1. Commit and push those changes to `package.json` to your GitHub remote repo. Open a new terminal and type in this command:
+```
+git add .
+git commit -m "My first portfolio all done!"
+git push origin main
+```
+1. Within this terminal window run `npm run deploy` after the previous commands have finished executing. This will first run the pre-deploy script to build the project, followed by the deploy script that will push those bundled files to a new branch on your repo (gh-pages) that will be used for you GitHub Pages site.
 1. When completed, within your repo, go to Settings and Pages. There you will see that a page has been set up to for you against the gh-pages branch, and you should see the URL (that should match the “homepage” value you set in package.json)
-
-![Azure Static Web App deploy](/__images__/github-pages-deploy.gif "Azure Static Web App deploy")
-
-> 🤩 **Bonus**: [Setup a custom domain for your GitHub pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 <br />
 
-## 🏆 Customizing with Copilot 
+<!-- ## 🏆 Customizing with Copilot 
 
 Below are 4 additional ways you can continue to customize your Codespace and portfolio site. We'll show you how to use Copilot to make suggestions for faster development, and help you learn more HTML, CSS and JavaScript along the way.
 
@@ -401,4 +372,4 @@ Explore how you can use Copilot to help you:
 <br />
 
 ## 🔎 Found an issue or have an idea for improvement? 
-Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new).
+Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new). -->
