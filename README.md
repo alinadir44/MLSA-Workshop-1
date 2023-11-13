@@ -7,12 +7,11 @@ _Just edit this template and you'll be set._ ✨
 The hard part is already done. Using this repository you can set up your very own portfolio website in a matter of minutes. All you have to do is work through the steps.
 
 ## An overview of what you'll be doing
-i- creating your own copy of this template.
-ii- launching your codespace.
-iii- editing this template to include your information.
-iv- editing the website template.
-v- deploying the website to github pages so that everyone can visit your portfolio.
-
+1. creating your own copy of this template.
+1. launching your codespace.
+1. editing this template to include your information.
+1. editing the website template.
+1. deploying the website to github pages so that everyone can visit your portfolio..
 <br />
 
 ### But before you start, you'll need to:
