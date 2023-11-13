@@ -2,50 +2,51 @@
 
 # Your Personal Portfolio using React and Github Pages
 
-_Just edit this template and you're set._ ✨
+_Just edit this template and you'll be set._ ✨
 
 The hard part is already done. Using this repository you can set up your very own portfolio website in a matter of minutes. All you have to do is work through the steps.
 
 ## An overview of what you'll be doing
 i- creating your own copy of this template.
-ii- editing this template to include your information.
-iii- adding or removing parts from the website.
-iv- deploying the website to github pages so that everyone can access your portfolio.
+ii- launching your codespace.
+iii- editing this template to include your information.
+iv- editing the website template.
+v- deploying the website to github pages so that everyone can visit your portfolio.
 
 <br />
 
 ### But before you start, you'll need to:
 
 * **Have a Github account**. If you have one, great, just log in. In case you dont remember the password, create a new account using your NUCES email address. (remove this part incase a gh account is needed to view this file)
-* **Fork this repository into your own account.** Forking is like obtaining your own copy of the project and all its contents. You might wonder if its legal to recreate someone else's project. Good for us Github is all about open source and collaboration.
-* **Clone this repository onto your PC/Laptop.** Download the project files onto your device using the clone option. 
-* **Open the project in your preferred IDE** and start making changes!
-
-(remove step 3,4 if cloning isnt involved)
+* **Fork this repository into your own account.** Forking is like obtaining your own copy of the project and all of its contents. You might wonder if its legal to recreate someone else's project. Good for us, Github is all about open source and collaboration.
+* **Start your codespaces container** A container is like a PC running on a remote server that you can access from anywhere, which means that you can write code from anywhere without setting up the environment before.
 
 ![JavaScript profile web application](/__images__/js-portfolio-site.gif "JavaScript profile web application")
 
 <br />
 
-## Getting Started/Getting into the more technical stuff
-What you are provided with is a frontend template made using React framework to help you build your portfolio. The goal is to give you a template that you can immediately utilize to create your own website.
+## Getting Started
+What you are provided with is a frontend template made using React framework to help you build your portfolio. The goal is to give you a template that you can immediately utilize.
 
 The repo contains the following:
 
+* `/.devcontainer`
+  - `.devcontainer/Dockerfile` Configuration file used by Codespaces to determine operating system of your remote PC and other details.
+  - `.devcontainer/devcontainer.json` Configuration file used by Codespaces to configure Visual Studio Code settings, such as the enabling of additional extensions.
 * `/__images__` contains all the images, videos and GIFs you used on your webiste.
 * `/src` contains all the main code files such as HTML, CSS, JS and others.
 * `package.json` and `package-lock.json` contains the information that the project's package manager will need to keep the project's dependencies consistent throughout every team member's device.
 
 <br />
 
-### Create your portfolio
+### Creating your portfolio
 
-1. Create a repository from this template. Use this [create repo link](https://github.com/microsoft/codespaces-project-template-js/generate). Select the repository owner, provide a name, a description if you'd like and if you'd like the new repository to be public or private.
+1. Fork this repo from this [link](https://github.com/alinadir44/MLSA-Workshop-1)
 1. Before creating the Codespace, enable GitHub Copilot for your account. If it is not enabled, take a look at [Customize your portfolio site using Copilot](#-customize-your-site-in-3-steps).
-1. Navigate to the main page of the newly created repository.
+1. Navigate to the main page of the newly forked repository.
 3. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
 
-    <img src="./__images__/createcodespace.png" alt="Create codespace" style="width:270px;"/>
+    <img src="./__images__/mycreatecodespace.png" alt="Create codespace" style="width:270px;"/>
 
     
 4. Wait as GitHub initializes the Codespace.
