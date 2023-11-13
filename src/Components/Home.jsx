@@ -8,7 +8,8 @@
 import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
-import html2pdf from "html2pdf.js";
+import resume from "../resume.pdf";
+
 /**
  * Home background image
  *
@@ -24,27 +25,21 @@ import image from "../images/woman-with-tablet.jpg";
 
 const imageAltText =
   "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
-
 const Home = ({ name, title }) => {
   /**
-   * Downloads the current webpage as a PDF.
+   * Downloads the resume file stored in the path .
    * @function
-   * @name downloadAsPDF
+   * @name download
    * @returns {void}
-   * @description Uses html2pdf library to convert the current webpage to a PDF and downloads it.
-   * @author Talha
+   * @description Downloads the resume file stored in the path when the Download Resume button is clicked. Uses the HTML5 download attribute to download the file.
    */
-  const downloadAsPDF = () => {
-    const element = document.body;
-    const opt = {
-      margin: 0,
-      filename: "myWebpage.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: "pt", format: "letter", orientation: "portrait" },
-    };
-    html2pdf().from(element).set(opt).save();
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "resume.pdf";
+    link.click();
   };
+
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
@@ -52,9 +47,8 @@ const Home = ({ name, title }) => {
         <h1>{name}</h1>
         <h2>{title}</h2>
         {/* added a button on the front page to download the entire website as a pdf (credits: Alishba)*/}
-        <button onClick={downloadAsPDF} className="download-btn">
-          {" "}
-          Download as pdf
+        <button onClick={handleDownload} className="download-btn">
+          Download Resume
         </button>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
@@ -67,11 +61,13 @@ const Home = ({ name, title }) => {
 Home.defaultProps = {
   name: "",
   title: "",
+  resume: "",
 };
 
 Home.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  resume: PropTypes.string.isRequired,
 };
 
 export default Home;
