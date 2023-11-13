@@ -8,7 +8,7 @@ The hard part is already done. Using this repository you can set up your very ow
 
 ## An overview of what you'll be doing
 1. creating your own copy of this template.
-1. launching your codespace.
+1. creating your codespace.
 1. editing this template to include your information.
 1. editing the website template.
 1. deploying the website to github pages so that everyone can visit your portfolio..
@@ -18,7 +18,7 @@ The hard part is already done. Using this repository you can set up your very ow
 
 * **Have a Github account**. If you have one, great, just log in. In case you dont remember the password, create a new account using your NUCES email address. (remove this part incase a gh account is needed to view this file)
 * **Fork this repository into your own account.** Forking is like obtaining your own copy of the project and all of its contents. You might wonder if its legal to recreate someone else's project. Good for us, Github is all about open source and collaboration.
-* **Start your codespaces container** A container is like a PC running on a remote server that you can access from anywhere, which means that you can write code from anywhere without setting up the environment before.
+* **Start your codespaces container** A container is like a PC running on a remote server that you can access from anywhere, which means that you can write code from anywhere without getting into the fuss of environment setup.
 
 ![JavaScript profile web application](/__images__/js-portfolio-site.gif "JavaScript profile web application")
 
@@ -34,7 +34,7 @@ The repo contains the following:
   - `.devcontainer/devcontainer.json` Configuration file used by Codespaces to configure Visual Studio Code settings, such as the enabling of additional extensions.
 * `/__images__` contains all the images, videos and GIFs you used on your webiste.
 * `/src` contains all the main code files such as HTML, CSS, JS and others.
-* `package.json` and `package-lock.json` contains the information that the project's package manager will need to keep the project's dependencies consistent throughout every team member's device.
+* `package.json` and `package-lock.json` contains the information that the project's package manager will need to keep the project's dependencies consistent on every team member's device.
 
 <br />
 
@@ -52,19 +52,21 @@ The repo contains the following:
 
     <img src="https://user-images.githubusercontent.com/82035/194710065-92f8c325-6f57-4c77-88d7-da8db3c235e9.png" alt="Codespace initializing" style="width: 600px;"/>
     
-5. When complete you will see your Codespace load with a terminal section at the bottom. Codespaces will install all the required extensions in your container, followed by executing `npm install`. Once the package installs are completed, Codesaces will execute `npm start` to start your web application running within your Codespace. 
+5. When complete you will see your Codespace load with a terminal section at the bottom. Codespaces will install all the required Visual Studio Code extensions in your container, followed by executing `npm install`. Once the package installs are completed, Codesaces will execute `npm start` to start your web application running within your Codespace. 
 
    When the web application has successfully started you will see a message in the terminal that the server is running on port 1234 within your Codespace:
 
    <img src="https://user-images.githubusercontent.com/82035/220460347-605293ba-d3d1-483a-8157-71eaabb7ef52.png" alt="Web application started on port 1234" style="width: 300px;"/>
+
+   A built-in browser will be launched to showcase the current template.
    
 <br />
 
-## ✨ Customize your site in 3 steps
+## ✨ Customizations!
 
 This project is built to be easily customizable. Each section of the site is a separate component, and your information needs to be set in only one spot. This is not only for ease of updating, but so you can see how prop values are passed to React components.
 
-For each step, open the project in Codespaces, then you can make and commit your changes while within your Codespace. 
+
 
 ### 1️⃣ Add your "About me" and social accounts
 
@@ -155,7 +157,7 @@ const projectList = [
 <br/>
 
 ## 🏃 Deploy your web application
-Now that you have edited your template, it's time to deploy it to Github Pages for free. Deploying it makes it accessible for other people around the world to access your website.
+Now that you have edited your template, it's time to deploy it to Github Pages for free. Deploying it makes it available to other people around the world.
 
 ### GitHub Pages
 
@@ -164,16 +166,16 @@ GitHub Pages allows you to host websites directly from your GitHub repository. T
 With your project open in Codespaces:
 
 1. Open `package.json` and update the following values:
-    1. **homepage**: set to `http://{github-username}.github.io/{repo-name}`, replace `{github-username}` with your GitHub username and `{repo-name}` with MLSA-Workshop-1.
-    1. **build-gh**: replace `{github-username}` with your GitHub username and `{repo-name}` with MLSA-Workshop-1.
-1. Commit and push those changes to `package.json` to your GitHub remote repo. Open a new terminal and type in this command:
+    1. **homepage**: set to `http://{github-username}.github.io/{repo-name}`, replace `{github-username}` with your GitHub username and `{repo-name}` `with MLSA-Workshop-1`.
+    1. **build-gh**: replace `{github-username}` with your GitHub username and `{repo-name}` with `MLSA-Workshop-1`.
+1. Commit and push those changes to `package.json` to your GitHub remote repo. To do this, open a new terminal and type in these commands:
 ```
 git add .
-git commit -m "My first portfolio all done!"
+git commit -m "My first portfolio, all done!"
 git push origin main
 ```
-1. Within this terminal window run `npm run deploy` after the previous commands have finished executing. This will first run the pre-deploy script to build the project, followed by the deploy script that will push those bundled files to a new branch on your repo (gh-pages) that will be used for you GitHub Pages site.
-1. When completed, within your repo, go to Settings and Pages. There you will see that a page has been set up to for you against the gh-pages branch, and you should see the URL (that should match the “homepage” value you set in package.json)
+3. Run `npm run deploy` on the same terminal after the previous commands have finished executing. This will first run the pre-deploy script to build the project, followed by the deploy script that will push those bundled files to a new branch on your repo (gh-pages) that will be used for you GitHub Pages site.
+4. When completed, within your repo, go to Settings and Pages. There you will see that a page has been set up to for you against the gh-pages branch, and you should see the URL (that should match the “homepage” value you set in package.json)
 
 <br />
 
