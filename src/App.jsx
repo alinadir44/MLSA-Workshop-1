@@ -21,6 +21,8 @@ import "./styles.css";
  * Update the values below with your information.
  *
  * If you don't have one of the social sites listed, leave it as an empty string.
+ * and if you dont have a resume just use the sample for now
+ * but its stupid that you dont have a resume make one ASAP
  */
 const siteProps = {
   name: "Alexandrie Grenier",
@@ -38,7 +40,6 @@ const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
 
 const App = () => {
-
   return (
     <div id="main">
       <Header />
