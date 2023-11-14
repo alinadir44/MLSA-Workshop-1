@@ -41,8 +41,7 @@ The repo contains the following:
 ### Creating your portfolio
 
 1. Fork this repo from this [link](https://github.com/alinadir44/MLSA-Workshop-1)
-1. Before creating the Codespace, enable GitHub Copilot for your account. If it is not enabled, take a look at [Customize your portfolio site using Copilot] (#-customize-your-site-in-3-steps). (should i keep this part or remove it?)
-1. Navigate to the main page of the newly forked repository.
+2. Navigate to the main page of the newly forked repository.
 3. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
 
     <img src="./__images__/mycreatecodespace.png" alt="Create codespace" style="width:270px;"/>
@@ -158,6 +157,35 @@ const projectList = [
 
 ## 🏃 Deploy your web application
 Now that you have edited your template, it's time to deploy it to Github Pages for free. Deploying it makes it available to other people around the world.
+
+### Azure Static Web Apps
+
+[Azure Static Web Apps](https://azure.microsoft.com/products/app-service/static/?WT.mc_id=academic-79839-sagibbon) is Microsoft's hosting solution for static sites (or sites that are rendered in the user's browser, not on a server) through Azure. This service provides additional opportunities to expand your site through Azure Functions, authentication, staging versions and more.
+
+You'll need both Azure and GitHub accounts to deploy your web application. If you don't yet have an Azure account you can create it from within during the deploy process, or from below links:
+
+* [Create a (no Credit Card required) Azure For Students account](https://azure.microsoft.com/free/students/?WT.mc_id=academic-79839-sagibbon)
+* [Create a new Azure account](https://azure.microsoft.com/?WT.mc_id=academic-79839-sagibbon)
+
+With your project open in Codespaces:
+
+1. Click Azure icon in the left sidebar. Log in if you are not already, and if new to Azure, follow the prompts to create your account.
+1. From Azure menu click “+” sign and then “Create Static Web App”.
+1. If you are not logged into GitHub you will be prompted to log in. If you have any pending file changes you will then be prompted to commit those changes.
+1. Set your application information when prompted:
+    1. **Region**: pick the one closest to you
+    1. **Project structure**: select "React"
+    1. **Location of application code**: `/`
+    1. **Build location**: `dist`
+1. When complete you will see a notification at the bottom of your screen, and a new GitHub Action workflow will be added to your project. If you click “Open Action in GitHub” you will see the action that was created for you, and it is currently running.
+![Azure Static Web App deploy](/__images__/swa-deploy.gif "Azure Static Web App deploy")
+1. To view the status of your deployment, find your Static Web App resource in the Azure tab in the VS Code left side bar.
+1. Once deployment is complete, you can view your brand new new publicly accessible application by right clicking on your Static Web App resource and selecting "Browse Site".
+
+> **Issues?** When creating your Static Web app, if you are prompted to select an Azure subscription and are not able to select a subscription, check the "Accounts" tab in VS Code. Make sure to choose the "Grant access to ..." options if those options appear. Should you receive the error-message "RepositoryToken is invalid. ..." switch to Visual Studio Code for the Web (vscode.dev) and repeat the steps there.
+
+> 🤩 **Bonus**: [Setup a custom domain for your Azure Static Web App](https://learn.microsoft.com/en-us/shows/azure-tips-and-tricks-static-web-apps/how-to-set-up-a-custom-domain-name-in-azure-static-web-apps-10-of-16--azure-tips-and-tricks-static-w/?WT.mc_id=academic-79839-sagibbon)
+
 
 ### GitHub Pages
 
