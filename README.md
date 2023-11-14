@@ -7,11 +7,11 @@ _Just edit this template and you'll be set._ ✨
 The hard part is already done. Using this repository you can set up your very own portfolio website in a matter of minutes. All you have to do is work through the steps.
 
 ## An overview of what you'll be doing
-1. creating your own copy of this template.
-1. creating your codespace.
-1. editing this template to include your information.
-1. editing the website template.
-1. deploying the website to github pages so that everyone can visit your portfolio..
+1. Creating your own copy of this template.
+1. Creating your codespace.
+1. Editing this template to include your information.
+1. Editing the website template.
+1. Deploying the website to github pages so that everyone can visit your website.
 <br />
 
 ### But before you start, you'll need to:
@@ -41,7 +41,7 @@ The repo contains the following:
 ### Creating your portfolio
 
 1. Fork this repo from this [link](https://github.com/alinadir44/MLSA-Workshop-1)
-1. Before creating the Codespace, enable GitHub Copilot for your account. If it is not enabled, take a look at [Customize your portfolio site using Copilot](#-customize-your-site-in-3-steps).
+1. Before creating the Codespace, enable GitHub Copilot for your account. If it is not enabled, take a look at [Customize your portfolio site using Copilot] (#-customize-your-site-in-3-steps). (should i keep this part or remove it?)
 1. Navigate to the main page of the newly forked repository.
 3. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
 
@@ -176,7 +176,7 @@ git push origin main
 ```
 3. Run `npm run deploy` on the same terminal after the previous commands have finished executing. This will first run the pre-deploy script to build the project, followed by the deploy script that will push those bundled files to a new branch on your repo (gh-pages) that will be used for you GitHub Pages site.
 4. When completed, within your repo, go to Settings and Pages. There you will see that a page has been set up to for you against the gh-pages branch, and you should see the URL (that should match the “homepage” value you set in package.json)
-
+5. Your website is now live and can be accessed from anywhere with the URL specified by you in the `package.json` file.
 <br />
 
 ## Contributors
