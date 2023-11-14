@@ -38,7 +38,7 @@ The repo contains the following:
 
 <br />
 
-### Creating your portfolio
+## Creating your portfolio
 
 1. Fork this repo from this [link](https://github.com/alinadir44/MLSA-Workshop-1)
 2. Navigate to the main page of the newly forked repository.
