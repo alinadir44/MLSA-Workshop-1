@@ -179,6 +179,13 @@ git push origin main
 
 <br />
 
+## Contributors
+[please add your names here]
+Asher
+
+
+## Conclusion/Thankyou section???
+
 <!-- ## 🏆 Customizing with Copilot 
 
 Below are 4 additional ways you can continue to customize your Codespace and portfolio site. We'll show you how to use Copilot to make suggestions for faster development, and help you learn more HTML, CSS and JavaScript along the way.
