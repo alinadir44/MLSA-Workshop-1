@@ -211,8 +211,11 @@ git push origin main
 <br />
 
 ## Contributors
-[please add your names here]
-Asher
-
-
-## Conclusion/Thankyou section???
+Ali Nadir
+Huzaifa Tanzeel
+Mehwish Sameer
+Talha Yousif
+Alishba Karam
+Sameer
+Rahim Irfan
+Asher Siddique
