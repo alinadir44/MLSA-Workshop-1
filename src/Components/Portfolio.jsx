@@ -31,16 +31,16 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Matrix Technologies Landing Page",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "I was responsible for making a Landing Page for the IT And Energy Services Company. Today it acts as the face of the company on the internet",
+    url: "https://www.matrixtechnology.com.pk/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "GUI Based C++ Arcade",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Worked in a team of 3 to build a university project based on C++ using the QT framework for building gui",
+    url: "https://github.com/Dani-Bhai/Arcade-App-CPP",
   },
   {
     title: "My Resume Site",
@@ -49,10 +49,10 @@ const projectList = [
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Redbus Routes",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "A website showing all redbus Routes along with the map of the route and their main stops.",
+    url: "https://redbusroute.vercel.app/",
   },
 ];
 
